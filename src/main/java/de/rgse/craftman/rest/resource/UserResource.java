@@ -21,6 +21,7 @@ import de.rgse.craftman.model.User;
 import de.rgse.craftman.service.UserService;
 import java.util.Optional;
 import javax.inject.Inject;
+import javax.transaction.Transactional;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -39,6 +40,7 @@ public class UserResource {
     private UserService userService;
     
     @POST
+    @Transactional
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response createUser(String userJson) {

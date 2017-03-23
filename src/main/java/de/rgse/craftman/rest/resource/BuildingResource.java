@@ -34,6 +34,7 @@ public class BuildingResource {
     private ProductionService productionService;
     
     @GET
+    @Transactional
     @ApiOperation("getBuildings")
     public Response getBuildings(@QueryParam("user") String user) {
         List<Building> buildings = buildingService.getBuildingsForUser(Optional.ofNullable(user));

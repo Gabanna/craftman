@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<title>ASS - ESS API</title>
+<link rel="stylesheet" href="strapdown-0.4.1/strapdown.css">
+<link rel="stylesheet" href="style/doc.css">
+
+<img class="logo" src="assets/images/bwb_logo.gif" alt="bwb logo">
+<xmp theme="united" style="display:none;">
+#ASS - ESS API
+
+
+## HTTP:///rest
+
+
+
+
+
+
+**Version** 1.0-SNAPSHOT
+
+[**Terms of Service**]()
+
+
+
+
+
+
+
+
+
+
+
+
+# APIs
+
+
+## /building/{user}
+
+
+### GET
+
+<a id="getBuildings">getBuildings</a>
+
+
+
+
+
+
+
+
+
+#### Request
+
+
+
+##### Parameters
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Located in</th>
+        <th>Required</th>
+        <th>Description</th>
+        <th>Default</th>
+        <th>Schema</th>
+    </tr>
+
+
+
+<tr>
+    <th>user</th>
+    <td>path</td>
+    <td>yes</td>
+    <td>
+        
+        
+    </td>
+    <td> - </td>
+
+    
+            <td>string </td>
+    
+
+</tr>
+
+
+</table>
+
+
+
+#### Response
+
+
+
+
+| Status Code | Reason      | Response Model |
+|-------------|-------------|----------------|
+| default    | successful operation |  - |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## /building/{user}/{buildingId}
+
+
+### GET
+
+<a id="getBuilding">getBuilding</a>
+
+
+
+
+
+
+
+
+
+#### Request
+
+
+
+##### Parameters
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Located in</th>
+        <th>Required</th>
+        <th>Description</th>
+        <th>Default</th>
+        <th>Schema</th>
+    </tr>
+
+
+
+<tr>
+    <th>user</th>
+    <td>path</td>
+    <td>yes</td>
+    <td>
+        
+        
+    </td>
+    <td> - </td>
+
+    
+            <td>string </td>
+    
+
+</tr>
+
+<tr>
+    <th>buildingId</th>
+    <td>path</td>
+    <td>yes</td>
+    <td>
+        
+        
+    </td>
+    <td> - </td>
+
+    
+            <td>string </td>
+    
+
+</tr>
+
+
+</table>
+
+
+
+#### Response
+
+
+
+
+| Status Code | Reason      | Response Model |
+|-------------|-------------|----------------|
+| default    | successful operation |  - |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## /building/{user}/{buildingId}/production
+
+
+### GET
+
+<a id="getProduction">getProduction</a>
+
+
+
+
+
+
+
+
+
+#### Request
+
+
+
+##### Parameters
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Located in</th>
+        <th>Required</th>
+        <th>Description</th>
+        <th>Default</th>
+        <th>Schema</th>
+    </tr>
+
+
+
+<tr>
+    <th>user</th>
+    <td>path</td>
+    <td>yes</td>
+    <td>
+        
+        
+    </td>
+    <td> - </td>
+
+    
+            <td>string </td>
+    
+
+</tr>
+
+<tr>
+    <th>buildingId</th>
+    <td>path</td>
+    <td>yes</td>
+    <td>
+        
+        
+    </td>
+    <td> - </td>
+
+    
+            <td>string </td>
+    
+
+</tr>
+
+
+</table>
+
+
+
+#### Response
+
+
+
+
+| Status Code | Reason      | Response Model |
+|-------------|-------------|----------------|
+| default    | successful operation |  - |
+
+
+
+
+
+
+### POST
+
+
+<a id="startProduction">startProduction</a>
+
+
+
+
+
+
+
+
+
+#### Request
+
+
+
+##### Parameters
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Located in</th>
+        <th>Required</th>
+        <th>Description</th>
+        <th>Default</th>
+        <th>Schema</th>
+    </tr>
+
+
+
+<tr>
+    <th>user</th>
+    <td>path</td>
+    <td>yes</td>
+    <td>
+        
+        
+    </td>
+    <td> - </td>
+
+    
+            <td>string </td>
+    
+
+</tr>
+
+<tr>
+    <th>buildingId</th>
+    <td>path</td>
+    <td>yes</td>
+    <td>
+        
+        
+    </td>
+    <td> - </td>
+
+    
+            <td>string </td>
+    
+
+</tr>
+
+
+</table>
+
+
+
+#### Response
+
+
+
+
+| Status Code | Reason      | Response Model |
+|-------------|-------------|----------------|
+| default    | successful operation |  - |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Definitions
+
+
+</xmp>
+
+<script src="strapdown-0.4.1/strapdown.js"></script>
+</html>

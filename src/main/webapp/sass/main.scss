@@ -1,0 +1,86 @@
+/*
+Copyright (C) 2017 BWXT109
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+*/
+/* 
+    Created on : 21.03.2017, 12:43:03
+    Author     : BWXT109
+*/
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+main {
+    height: calc(70% - 50px);
+}
+
+header {
+    display: flex;
+    height: 50px;
+
+    background-image: url('../assets/images/wooden_fence_5132521.JPG');
+    background-size: cover;
+
+    div {
+        display: inline-block;
+        flex-basis: 33%;
+        box-shadow: inset 0 0 10px #000;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+}
+
+header, footer {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    background-image: url('../assets/images/wooden_fence_5132521.JPG');
+    background-size: cover;
+
+    & > div {
+        display: inline-block; height : 100%;
+        flex-grow: 1;
+        height: calc(100% - 40px);
+        box-shadow: inset 0 0 10px #000;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .illustration {
+        flex-basis: 20%;
+    }
+
+    .actions {
+        flex-basis: 40%;
+        text-align: center;
+    }
+
+    .addition {
+        flex-basis: 40%;
+        text-align: right;
+    }
+}

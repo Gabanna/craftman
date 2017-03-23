@@ -1,0 +1,96 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0-SNAPSHOT",
+    "title" : "ASS - ESS API"
+  },
+  "basePath" : "/rest",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/building/{user}" : {
+      "get" : {
+        "summary" : "getBuildings",
+        "description" : "",
+        "operationId" : "getBuildings",
+        "parameters" : [ {
+          "name" : "user",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      }
+    },
+    "/building/{user}/{buildingId}" : {
+      "get" : {
+        "summary" : "getBuilding",
+        "description" : "",
+        "operationId" : "getBuilding",
+        "parameters" : [ {
+          "name" : "user",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "buildingId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      }
+    },
+    "/building/{user}/{buildingId}/production" : {
+      "get" : {
+        "summary" : "getProduction",
+        "description" : "",
+        "operationId" : "getProduction",
+        "parameters" : [ {
+          "name" : "user",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "buildingId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      },
+      "post" : {
+        "summary" : "startProduction",
+        "description" : "",
+        "operationId" : "startProduction",
+        "parameters" : [ {
+          "name" : "user",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "buildingId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "default" : {
+            "description" : "successful operation"
+          }
+        }
+      }
+    }
+  }
+}
